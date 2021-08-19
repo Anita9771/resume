@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.burger{
+    display: none; 
+}
+
+body{
+    overflow-x: hidden;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, lightgreen, crimson);
+    color: white;
+    padding: 2em 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header a{
+    text-decoration: none;
+    padding: .2em 1em;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow:0 0.5em 1em rgba(0, 0, 0, 0.2);
+    background:rgba(255, 255, 255, 0.2);
+    border-radius: .2em;
+    display: block;
+    transition: none;
+}
+
+header a:hover{
+    background:rgba(255, 255, 255, 0.5);
+    color: #555;
+}
+
+header li{
+    list-style: none;
+    padding: .5em;
+}
+
+header{
+    backdrop-filter: blur(0.4rem);
+    width: 20em;
+    background: rgba(255, 255, 255 0.2);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 1em;
+    border-radius: .1em;
+    height: 91vh;
+    transition: all .2s linear;
+}
+
+.me img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+}
+
+article{
+    backdrop-filter: blur(0.4rem);
+    width: 60em;
+    height: 91vh;
+    background: rgba(255, 255, 255 0.2);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+    border-radius: .1em;
+    overflow: hidden;
+}
+
+.intro{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+.intro .buttons{
+    /* border: 2px solid; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: .2em;
+}
+
+.intro .buttons button, form button{
+    font-size: 1rem;
+    /* padding: .5em .2em; */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: .2em;
+    cursor: pointer;
+    width:10em;
+    height: 2em;
+    border: none;
+    transition:.2s linear;
+}
+
+.intro .buttons button:hover, .box:hover{
+    background-color:rgba(172, 154, 154, 0.5);
+    color: #555;
+}
+
+.intro h3, .intro h2, .intro h1{
+    padding: .5em;
+}
+
+.intro h3{
+    margin-top: 5em;
+}
+
+.intro .socials{
+    position: absolute;
+    left: 50%;
+    bottom: 5em;
+    border-radius: .2em;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    padding: .2em;
+    display: flex;
+    justify-content: space-around;
+    transform: translateX(-50%);
+    transition: .2s linear;
+}
+
+.intro i{
+    text-decoration: none;
+    padding:1em 2em;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    margin: .5em;
+    font-size: 1rem;
+    border-radius: .2em;
+}
+
+.intro i:hover, .edu:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+    color: #555;
+}
+
+section{
+    min-height: 100%;
+}
+
+.skills, .education, .experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes, .exp{
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5em;
+}
+
+.box, .edu{
+    margin: .5em;
+    padding: .5em;
+    border-radius: .2em;
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 15em;
+}
+
+.box i{
+    font-size: 5.5em;
+    padding: .5em 0;
+}
+
+.edu{
+    width: 80%;
+    font-size: 2rem; 
+}
+
+.exp-each{
+    text-align: left;
+    width: 20em;
+    margin: .5em;
+    padding: .5em;
+    padding-left: 1em;
+    border-left: .1em solid white;
+}
+
+.exp-each div{
+    position: relative;
+}
+
+.exp-each div::before{
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -1.5em;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background: white;
+
+}
+
+.box img{
+    width: 10em;
+    height: 10em;
+    object-fit: contain;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+    margin-left: .5em;
+    height: 80%;
+}
+
+.contact h2{
+    padding-top: 3em;
+    text-align: center;
+}
+
+form{
+    justify-content: space-between;
+    display: flex;
+    padding: 2em 1em;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: .2em;
+}
+
+input, textarea{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: .2em;
+    border: none;
+    margin: .5em 0;
+    padding: 0 .5em;
+    height: 3em;
+    width: 48%;
+    color: white;
+}
+
+textarea{
+    padding: .5em;
+    height: 7em;
+    resize: none;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+.right{
+    padding: 0 2.5em;
+}
+
+.options{
+    padding: .5em 0;
+}
+
+.options i{
+    padding: .5em 0;
+    font-size:2rem;
+}
+
+.theme{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: .2em;
+    backdrop-filter: blur(.2em);
+}
+
+.theme span{
+    display: block; 
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin: 1em;
+    box-shadow: 0 0 0 .2em rgba(255, 255, 255, 0.2),
+                0 .5em 1em rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive design */
+
+@media (min-width: 320px) and (max-width: 768px){
+
+    body{
+        overflow: visible;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .burger i{
+        font-size: 2rem;
+    }
+
+    header{
+        display: none;
+        position: absolute;
+        z-index: 9;
+        margin: 3rem 0;
+        height: 100vh;
+        width: 100% !important;
+        font-size: .5rem;
+        padding-bottom: 0;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .me img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    nav a{
+        font-size: .8rem;
+    }
+
+    .theme{
+        position: fixed;
+        transform: rotate(270deg);
+        background: none;
+        box-shadow: none;
+        margin-top: -5rem;
+        margin-left: 55%;
+    }
+
+    .theme span{
+        width: 1rem;
+        height: 1rem;
+        /* padding: 0 4rem; */
+    }
+
+    article{
+        width: 100%;
+        padding: 0;
+        margin: 1rem;
+        font-size: .5rem;
+    }
+
+    .intro{
+        padding-bottom: 5rem;
+    }
+
+    .intro .buttons{
+        width: 60%;
+    }
+
+    .intro .buttons button{
+        width: 4rem;
+        height: 1.5rem;
+        font-size: .5rem;
+    }
+
+    .socials i{
+        font-size: .5rem;
+    }
+
+    .skills{
+        padding: 1rem 0;
+    }
+
+    .skills .box{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #sponsors{
+        margin: 1rem 0;
+    }
+
+    #sponsors .box{
+        width: 6rem;
+        height: 5rem;
+        padding: .2rem;
+    }
+
+    #sponsors .box img{
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .education{
+        margin: 2rem 0;
+    }
+
+    .education .edu{
+        font-size: .8rem;
+    }
+
+    .exp{
+        width: 100%;
+    }
+
+.experience .exp-each{
+    width: 7rem;
+    /* height: 5rem; */
+    font-size: .4rem;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+form{
+    width: 80%;
+    margin-left: 2rem;
+}
+
+form button{
+    width: 100%;
+}
+
+.contact{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+input, textarea, .right .options i{
+    font-size: .5rem;
+}
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right .options{
+    padding: .1rem;
+    text-align: center;
+}
+}
+
+@media (width: 768px){
+    .experience .exp-each{
+        width: 40%;
+        font-size: .5rem;
+    }
+
+    .intro .buttons{
+        width: 20%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+body{
+    padding: 0;
+}
+
+    header{
+        height: 95vh;
+        font-size: .8rem;
+        margin-left: .5rem;
+        margin-top: .5rem;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+
+    .me img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    article{
+        height: 95vh;
+        margin: 0 1rem;
+        margin-top: .5rem;
+    }
+
+    .intro .socials{
+        bottom: 1rem;
+    }
+
+    .socials i{
+        font-size: .8rem;
+    }
+
+    .skills .box{
+        width: 10rem;
+    }
+
+    .skills{
+        margin: 0;
+    }
+
+    .box i{
+        font-size: 2rem;
+    }
+
+    .education{
+        margin-bottom: 2rem;
+    }
+
+    .education .edu{
+        font-size: 1.5rem;
+    }
+
+    .experience .exp-each{
+        width: 16rem;
+        font-size: .8rem;
+    } 
+
+    .right .options{
+        font-size: 1rem;
+    }
+
+    .right .options i{
+        font-size: 1rem;
+    }
+
+    .cont{
+        margin: 0;
+        padding-top: 2rem;
+    }
+    
+    #sponsors .box img{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    form{
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
