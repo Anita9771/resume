@@ -372,6 +372,7 @@ input::placeholder, textarea::placeholder{
         padding-bottom: 5rem;
         height: 50vh;
         border: 2px solid;
+        margin-top: 20vh;
     }
 
     .intro .buttons{
@@ -385,7 +386,7 @@ input::placeholder, textarea::placeholder{
     }
 
     .skills{
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
 
     .socials{
