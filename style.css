@@ -125,9 +125,11 @@ article{
 }
 
 .intro .socials{
-    position: absolute;
+    /* position: absolute;
     left: 50%;
-    bottom: 5em;
+    bottom: 5em; */
+    margin-top: 20%;
+    margin-left: 50%;
     border-radius: .2em;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
@@ -155,7 +157,7 @@ article{
 }
 
 section{
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .skills, .education, .experience{
@@ -313,6 +315,7 @@ input::placeholder, textarea::placeholder{
 
     .burger{
         display: block;
+        margin-top: 1rem;
     }
 
     .burger i{
@@ -367,6 +370,8 @@ input::placeholder, textarea::placeholder{
 
     .intro{
         padding-bottom: 5rem;
+        height: 50vh;
+        border: 2px solid;
     }
 
     .intro .buttons{
@@ -379,8 +384,18 @@ input::placeholder, textarea::placeholder{
         font-size: .5rem;
     }
 
+    .skills{
+        margin-top: 5rem;
+    }
+
+    .socials{
+        /* border: 2px solid; */
+        margin-left: 3rem;
+    }
+
     .socials i{
         font-size: .5rem;
+        padding: .2rem;
     }
 
     .skills{
