@@ -371,7 +371,7 @@ input::placeholder, textarea::placeholder{
     .intro{
         padding-bottom: 5rem;
         height: 50vh;
-        border: 2px solid;
+        /* border: 2px solid; */
         margin-top: 20vh;
     }
 
