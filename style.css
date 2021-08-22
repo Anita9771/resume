@@ -479,13 +479,16 @@ textarea::placeholder {
   }
 
   .exp {
-      border: 2px solid;
       margin: 0;
     width: 100%;
   }
 
+  .experience h2{
+      margin-top: 2rem;
+  }
+
   .experience {
-      max-height: 100%;
+      /* max-height: 100%; */
   }
 
   .cont{
@@ -494,7 +497,6 @@ textarea::placeholder {
 
   .contact{
       height: 640px;
-      border: 2px solid;
   }
 
   .right {
