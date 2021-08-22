@@ -1,720 +1,724 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.burger{
-    display: none; 
+.burger {
+  display: none;
 }
 
-body{
-    overflow-x: hidden;
-    overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    background: linear-gradient(to bottom, lightgreen, crimson);
-    color: white;
-    padding: 2em 0;
+body {
+  overflow-x: hidden;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, lightgreen, crimson);
+  color: white;
+  padding: 2em 0;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-header a{
-    text-decoration: none;
-    padding: .2em 1em;
-    color: white;
-    font-size: 1.5rem;
-    box-shadow:0 0.5em 1em rgba(0, 0, 0, 0.2);
-    background:rgba(255, 255, 255, 0.2);
-    border-radius: .2em;
-    display: block;
-    transition: none;
+header a {
+  text-decoration: none;
+  padding: 0.2em 1em;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.2em;
+  display: block;
+  transition: none;
 }
 
-header a:hover{
-    background:rgba(255, 255, 255, 0.5);
-    color: #555;
+header a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #555;
 }
 
-header li{
-    list-style: none;
-    padding: .5em;
+header li {
+  list-style: none;
+  padding: 0.5em;
 }
 
-header{
-    backdrop-filter: blur(0.4rem);
-    width: 20em;
-    background: rgba(255, 255, 255 0.2);
-    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 1em;
-    border-radius: .1em;
-    height: 91vh;
-    transition: all .2s linear;
+header {
+  backdrop-filter: blur(0.4rem);
+  width: 20em;
+  background: rgba(255, 255, 255 0.2);
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.1em;
+  height: 91vh;
+  transition: all 0.2s linear;
 }
 
-.me img{
-    width: 10em;
-    height: 10em;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+.me img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
 }
 
-article{
-    backdrop-filter: blur(0.4rem);
-    width: 60em;
-    height: 91vh;
-    background: rgba(255, 255, 255 0.2);
-    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
-    border-radius: .1em;
-    overflow: hidden;
+article {
+  backdrop-filter: blur(0.4rem);
+  width: 60em;
+  height: 91vh;
+  background: rgba(255, 255, 255 0.2);
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+  border-radius: 0.1em;
+  overflow: hidden;
 }
 
-.intro{
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 2em;
+.intro {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2em;
 }
 
-.intro .buttons{
-    /* border: 2px solid; */
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    padding: .2em;
+.intro .buttons {
+  /* border: 2px solid; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2em;
 }
 
-.intro .buttons button, form button{
-    font-size: 1rem;
-    /* padding: .5em .2em; */
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    border-radius: .2em;
-    cursor: pointer;
-    width:10em;
-    height: 2em;
-    border: none;
-    transition:.2s linear;
+.intro .buttons button,
+form button {
+  font-size: 1rem;
+  /* padding: .5em .2em; */
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+  cursor: pointer;
+  width: 10em;
+  height: 2em;
+  border: none;
+  transition: 0.2s linear;
 }
 
-.intro .buttons button:hover, .box:hover{
-    background-color:rgba(172, 154, 154, 0.5);
-    color: #555;
+.intro .buttons button:hover,
+.box:hover {
+  background-color: rgba(172, 154, 154, 0.5);
+  color: #555;
 }
 
-.intro h3, .intro h2, .intro h1{
-    padding: .5em;
+.intro h3,
+.intro h2,
+.intro h1 {
+  padding: 0.5em;
 }
 
-.intro h3{
-    margin-top: 5em;
+.intro h3 {
+  margin-top: 5em;
 }
 
-.intro .socials{
-    /* position: absolute;
+.intro .socials {
+  /* position: absolute;
     left: 50%;
     bottom: 5em; */
-    margin-top: 3rem;
-    /* margin-left: 3rem; */
-    border-radius: .2em;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    padding: .2em;
-    display: flex;
-    justify-content: space-around;
-    /* transform: translateX(-50%); */
-    transition: .2s linear;
+  margin-top: 3rem;
+  /* margin-left: 3rem; */
+  border-radius: 0.2em;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  padding: 0.2em;
+  display: flex;
+  justify-content: space-around;
+  /* transform: translateX(-50%); */
+  transition: 0.2s linear;
 }
 
-.intro i{
-    text-decoration: none;
-    padding:1em 2em;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    margin: .5em;
-    font-size: 1rem;
-    border-radius: .2em;
+.intro i {
+  text-decoration: none;
+  padding: 1em 2em;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
+  font-size: 1rem;
+  border-radius: 0.2em;
 }
 
-.intro i:hover, .edu:hover{
-    background-color:rgba(255, 255, 255, 0.5);
-    color: #555;
+.intro i:hover,
+.edu:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #555;
 }
 
-section{
-    min-height: 100vh;
+section {
+  min-height: 100vh;
 }
 
-.skills, .education, .experience{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.skills,
+.education,
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.boxes, .exp{
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 5em;
+.boxes,
+.exp {
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 5em;
 }
 
-.box, .edu{
-    margin: .5em;
-    padding: .5em;
-    border-radius: .2em;
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.2);
-    text-align: center;
-    width: 15em;
+.box,
+.edu {
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 15em;
 }
 
-.box i{
-    font-size: 5.5em;
-    padding: .5em 0;
+.box i {
+  font-size: 5.5em;
+  padding: 0.5em 0;
 }
 
-.edu{
-    width: 80%;
-    font-size: 2rem; 
+.edu {
+  width: 80%;
+  font-size: 2rem;
 }
 
-.exp-each{
-    text-align: left;
-    width: 20em;
-    margin: .5em;
-    padding: .5em;
-    padding-left: 1em;
-    border-left: .1em solid white;
+.exp-each {
+  text-align: left;
+  width: 20em;
+  margin: 0.5em;
+  padding: 0.5em;
+  padding-left: 1em;
+  border-left: 0.1em solid white;
 }
 
-.exp-each div{
-    position: relative;
+.exp-each div {
+  position: relative;
 }
 
-.exp-each div::before{
-    content: '';
-    position: absolute;
-    top: .5em;
-    left: -1.5em;
-    height: 1em;
-    width: 1em;
-    border-radius: 50%;
-    background: white;
-
+.exp-each div::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: -1.5em;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background: white;
 }
 
-.box img{
-    width: 10em;
-    height: 10em;
-    object-fit: contain;
+.box img {
+  width: 10em;
+  height: 10em;
+  object-fit: contain;
 }
 
 .cont {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5em;
-    margin-left: .5em;
-    height: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+  margin-left: 0.5em;
+  height: 80%;
 }
 
-.contact h2{
-    padding-top: 3em;
-    text-align: center;
+.contact h2 {
+  padding-top: 3em;
+  text-align: center;
 }
 
-form{
-    justify-content: space-between;
-    display: flex;
-    padding: 2em 1em;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    border-radius: .2em;
+form {
+  justify-content: space-between;
+  display: flex;
+  padding: 2em 1em;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
 }
 
-input, textarea{
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    border-radius: .2em;
-    border: none;
-    margin: .5em 0;
-    padding: 0 .5em;
-    height: 3em;
-    width: 48%;
-    color: white;
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+  border: none;
+  margin: 0.5em 0;
+  padding: 0 0.5em;
+  height: 3em;
+  width: 48%;
+  color: white;
 }
 
-textarea{
-    padding: .5em;
-    height: 7em;
-    resize: none;
-    width: 100%;
+textarea {
+  padding: 0.5em;
+  height: 7em;
+  resize: none;
+  width: 100%;
 }
 
-input::placeholder, textarea::placeholder{
-    color: white;
+input::placeholder,
+textarea::placeholder {
+  color: white;
 }
 
-.right{
-    padding: 0 2.5em;
+.right {
+  padding: 0 2.5em;
 }
 
-.options{
-    padding: .5em 0;
+.options {
+  padding: 0.5em 0;
 }
 
-.options i{
-    padding: .5em 0;
-    font-size:2rem;
+.options i {
+  padding: 0.5em 0;
+  font-size: 2rem;
 }
 
-.theme{
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.2);
-    border-radius: .2em;
-    backdrop-filter: blur(.2em);
+.theme {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+  backdrop-filter: blur(0.2em);
 }
 
-.theme span{
-    display: block; 
-    cursor: pointer;
-    height: 2em;
-    width: 2em;
-    border-radius: 50%;
-    margin: 1em;
-    box-shadow: 0 0 0 .2em rgba(255, 255, 255, 0.2),
-                0 .5em 1em rgba(0, 0, 0, 0.5);
+.theme span {
+  display: block;
+  cursor: pointer;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  margin: 1em;
+  box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.2),
+    0 0.5em 1em rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive design */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
 
-    body{
-        overflow: visible;
-        overflow-x: hidden;
-        padding: 0;
-    }
+  .burger {
+    display: block;
+    margin-top: 3rem;
+    padding-left: 0.5rem;
+  }
 
-    .burger{
-        display: block;
-        margin: 1.5rem 0;
-        padding-left: .5rem;
-    }
+  .burger i {
+    font-size: 2rem;
+  }
 
-    .burger i{
-        font-size: 2rem;
-    }
+  header {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    margin: 3rem 0;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 0;
+  }
 
-    header{
-        display: none;
-        position: absolute;
-        z-index: 9;
-        margin: 3rem 0;
-        height: 100vh;
-        width: 100%;
-        padding-bottom: 0;
-    }
+  nav {
+    width: 100%;
+  }
 
-    nav{
-        width: 100%;
-    }
+  nav li a {
+    font-size: 1.8rem;
+  }
 
-    nav li a{
-        font-size: 1.8rem;
-    }
+  .me img {
+    width: 2rem;
+    height: 2rem;
+  }
 
-    .me img{
-        width: 2rem;
-        height: 2rem;
-    }
+  nav a {
+    font-size: 0.8rem;
+  }
 
-    nav a{
-        font-size: .8rem;
-    }
+  .theme {
+    position: fixed;
+    transform: rotate(270deg);
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    margin-top: -4rem;
+    margin-left: 55%;
+  }
 
-    .theme{
-        position: fixed;
-        transform: rotate(270deg);
-        background: none;
-        box-shadow: none;
-        margin-top: -3rem;
-        margin-left: 55%;
-    }
+  .theme span {
+    width: 1rem;
+    height: 1rem;
+    /* padding: 0 4rem; */
+  }
 
-    .theme span{
-        width: 1rem;
-        height: 1rem;
-        /* padding: 0 4rem; */
-    }
+  article {
+    width: 100%;
+    padding: 0;
+    margin: 1rem;
+    font-size: 0.5rem;
+    /* background: none; */
+    box-shadow: none;
+    min-height: 100vh;
+  }
 
-    article{
-        width: 100%;
-        padding: 0;
-        margin: 1rem;
-        font-size: .5rem;
-        /* background: none; */
-        box-shadow: none;
-        height: 100vh;
-    }
-
-    .intro{
-        padding-bottom: 5rem;
-        height: 90vh;
-        font-size: 1rem; 
-        text-align: center;
-
-        /* background: none;
+  .intro {
+    /* padding-bottom: 10rem; */
+    height: 80vh;
+    font-size: 1rem;
+    text-align: center;
+    /* margin-top: 20rem; */
+    /* background: none;
         box-shadow: none; */
-        /* border: 2px solid; */
-        margin-top: 10vh;
-    }
+    /* border: 2px solid; */
+  }
 
-    .intro .buttons{
-        width: 60%;
-    }
+  .intro .buttons {
+    width: 70%;
+  }
 
-    .intro .buttons button{
-        width: 4.5rem;
-        height: 1.5rem;
-        font-size: .6rem;
-    }
+  .intro .buttons button {
+    width: 4.5rem;
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
 
-    .socials i{
-        font-size: 1.2rem;
-        padding: .4rem;
-    }
+  .socials i {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
 
-    .skills{
-        margin: 0;
-        /* border: 2px solid; */
-        height: 100vh;
-        
-    }
+  .skills {
+    margin: 0;
+    /* border: 2px solid; */
+    height: 70vh;
+  }
 
-    article h2{
-        font-size: 2rem;
-        margin: 0;
-        text-align: center;
-    }
+  article h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
 
-    .skills .box{
-        width: 15rem;
-        height: 6rem;
-        justify-content: center;
-        align-items: center;
-    }
+  .skills .box {
+    width: 15rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .skills .boxes{
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-    }
+  .skills .boxes {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .skills .box i{
-        font-size: 3rem;
-    }
+  .skills .box i {
+    font-size: 2rem;
+  }
 
-    #sponsors{
-        width: 100%;
-    }
+  #sponsors {
+    width: 100%;
+  }
 
-    #sponsors .box{
-        width: 100%;
-        height: 7rem;
-        padding: .5rem;
-    }
+  #sponsors .box {
+    width: 100%;
+    height: 7rem;
+    padding: 0.5rem;
+  }
 
-    #sponsors .box img{
-        width: 10rem;
-        height: 6rem;
-        object-fit: contain;
-    }
+  #sponsors .box img {
+    width: 10rem;
+    height: 6rem;
+    object-fit: contain;
+  }
 
-    .education{
-        margin: 0;
-    }
+  .education {
+    margin-bottom: 10vh;
+  }
 
-    .education .edu{
-        font-size: 1.2rem;
-    }
+  
 
-    .exp{
-        width: 100%;
-    }
+  .education .edu {
+    font-size: 1.2rem;
+  }
 
-    .experience h2{
-        padding-top: .2rem;
-    }
+  .exp {
+    width: 100%;
+    margin: 0;
+    font-size: .6rem;
+  }
 
-    .experience{
-        height: 100vh;
-    }
-
-.experience .exp-each{
-    /* width: 7rem; */
-    font-size: .65rem;
+  .experience h2{
+    padding-top: .2rem;
 }
 
+  .experience {
+    height: 60vh;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+  }
 
+  .experience .exp-each {
+    
+  }
 
-.cont{
+  .cont {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     margin: 0;
-}
+  }
 
-form{
+  form {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 100%;
-}
+  }
 
-form button{
+  form button {
     width: 100%;
-}
+  }
 
-.contact{
+  .contact {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     margin: 0;
-}
+  }
 
-input{
+  input {
     margin-top: 0;
-}
+  }
 
-textarea{
+  textarea {
     height: 50%;
-}
+  }
 
-input, textarea, .right .options i{
-    font-size: .7rem;
-}
+  input,
+  textarea,
+  .right .options i {
+    font-size: 0.7rem;
+  }
 
-.right{
+  .right {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+  }
 
-.right .options{
-    padding: .1rem;
+  .right .options {
+    padding: 0.1rem;
     text-align: center;
-}
-}
-
-@media (width: 768px){
-
-    .intro{
-        font-size: 1.5rem;
-    }
-    .experience .exp-each{
-        /* width: 40%; */
-        font-size: 1rem;
-    }
-
-    .intro .buttons{
-        width: 50%;
-        
-    }
-
-    .intro .buttons button{
-        width: 10rem;
-        height: 3em;
-        font-size: 1.2rem;
-    }
-
-    .socials{
-        width: 80%;
-    }
-
-    .socials i{
-        font-size: 2rem;
-    }
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
-body{
+@media (width: 768px) {
+  .intro {
+    font-size: 1.5rem;
+  }
+  .experience .exp-each {
+    /* width: 40%; */
+    font-size: 1rem;
+  }
+
+  .intro .buttons {
+    width: 50%;
+  }
+
+  .intro .buttons button {
+    width: 10rem;
+    height: 3em;
+    font-size: 1.2rem;
+  }
+
+  .socials {
+    width: 80%;
+  }
+
+  .socials i {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
     padding: 0;
-}
+  }
 
-    header{
-        height: 95vh;
-        font-size: 1rem;
-        margin-left: .5rem;
-        margin-top: .5rem;
-    }
+  header {
+    height: 95vh;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
 
-    nav a{
-        font-size: .8rem;
-    }
+  nav a {
+    font-size: 0.8rem;
+  }
 
-    .me img{
-        width: 7rem;
-        height: 7rem;
-    }
+  .me img {
+    width: 7rem;
+    height: 7rem;
+  }
 
-    article{
-        height: 95vh;
-        margin: 0 1rem;
-        margin-top: .5rem;
-        text-align: center;
-    }
+  article {
+    height: 95vh;
+    margin: 0 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
 
-    article h2{
-        font-size: 2rem;
-    }
+  article h2 {
+    font-size: 2rem;
+  }
 
-    .intro{
-        font-size: .7rem;
-    }
+  .intro {
+    font-size: 0.7rem;
+  }
 
-    .intro .socials{
-        bottom: 1rem;
-    }
+  .intro .socials {
+    bottom: 1rem;
+  }
 
-.intro .buttons{
+  .intro .buttons {
     width: 70%;
-}
+  }
 
-.intro .buttons button{
+  .intro .buttons button {
     width: 10rem;
     height: 4rem;
     font-size: 1.2rem;
+  }
+
+  .socials i {
+    font-size: 1rem;
+  }
+
+  .skills .box {
+    width: 10rem;
+  }
+
+  .skills {
+    margin: 0;
+  }
+
+  .skills .box i {
+    font-size: 2rem;
+  }
+
+  .education {
+    margin-bottom: 2rem;
+  }
+
+  .education .edu {
+    font-size: 1.5rem;
+  }
+
+  .experience .exp-each {
+    /* width: 16rem; */
+    font-size: 0.8rem;
+  }
+
+  .right .options {
+    font-size: 1rem;
+  }
+
+  .right .options i {
+    font-size: 1rem;
+  }
+
+  #sponsors .boxes {
+    margin: 0;
+  }
+
+  #sponsors .box img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  form {
+    margin: 0;
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    width: 95%;
+    margin: 0 1rem;
+    padding: 0;
+    height: 100%;
+  }
+
+  form button {
+    margin: 0 10rem;
+    width: 50%;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+
+  input {
+    margin-top: 0;
+  }
+
+  textarea {
+    height: 50%;
+  }
+
+  input,
+  textarea,
+  .right .options i {
+    font-size: 1rem;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .right .options {
+    padding: 0.1rem;
+    text-align: center;
+  }
 }
-
-    .socials i{
-        font-size: 1rem;
-    }
-
-    .skills .box{
-        width: 10rem;
-    }
-
-    .skills{
-        margin: 0;
-    }
-
-    .skills .box i{
-        font-size: 2rem;
-    }
-
-    .education{
-        margin-bottom: 2rem;
-    }
-
-    .education .edu{
-        font-size: 1.5rem;
-    }
-
-    .experience .exp-each{
-        /* width: 16rem; */
-        font-size: .8rem;
-    } 
-
-    .right .options{
-        font-size: 1rem;
-    }
-
-    .right .options i{
-        font-size: 1rem;
-    }
-
-    #sponsors .boxes{
-        margin: 0;
-    }
-    
-    #sponsors .box img{
-        width: 7rem;
-        height: 7rem;
-    }
-
-    form{
-        margin: 0;
-    }
-
-    .cont{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 50vh;
-        margin: 0;
-        padding: 0;
-    }
-    
-    form{
-        width: 95%;
-        margin: 0 1rem;
-        padding: 0;
-        height: 100%;
-    }
-    
-    form button{
-        margin: 0 10rem;
-        width: 50%;
-    }
-    
-    .contact{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        margin: 0;
-    }
-    
-    input{
-        margin-top: 0;
-    }
-    
-    textarea{
-        height: 50%;
-    }
-    
-    input, textarea, .right .options i{
-        font-size: 1rem;
-    }
-    
-    .right{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .right .options{
-        padding: .1rem;
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-
-
-
-
