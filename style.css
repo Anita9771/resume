@@ -317,8 +317,8 @@ textarea::placeholder {
 
 @media (max-width: 768px) {
   body {
-    overflow: hidden;
-    overflow-x: hidden;
+    
+    /* overflow-x: hidden; */
     padding: 0;
     margin: 0;
   }
@@ -383,8 +383,13 @@ textarea::placeholder {
     font-size: 0.5rem;
     /* background: none; */
     box-shadow: none;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
   }
+
+.intro, .skills, .education, .experience, .contact{
+    height: 100% !important;
+}
 
   .intro {
     /* padding-bottom: 10rem; */
@@ -458,7 +463,8 @@ textarea::placeholder {
   }
 
   .education {
-    margin-bottom: 10vh;
+    margin: 10vh 0;
+    padding: 0;
   }
 
   
@@ -479,12 +485,7 @@ textarea::placeholder {
 
   .experience {
     height: 60vh;
-    margin-bottom: 20vh;
-    margin-top: 10vh;
-  }
-
-  .experience .exp-each {
-    
+    margin-top: 10vh 0;
   }
 
   .cont {
@@ -511,16 +512,16 @@ textarea::placeholder {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    margin: 0;
+    margin: 10vh 0;
   }
 
-  input {
+  /* input {
     margin-top: 0;
-  }
+  } */
 
-  textarea {
+  /* textarea {
     height: 50%;
-  }
+  } */
 
   input,
   textarea,
