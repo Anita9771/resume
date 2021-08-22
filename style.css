@@ -324,7 +324,10 @@ textarea::placeholder {
     height: 100vh;
   }
   
-  
+  .intro, .skills, .education, .experience, .contact{
+      min-height: 100% !important;
+      overflow-x: hidden;
+  }
 
   .burger {
     position: fixed;
@@ -381,7 +384,6 @@ textarea::placeholder {
   }
 
   article {
-    border: 2px solid;
     margin: 0;
     padding: 0;
     backdrop-filter: none;
@@ -477,6 +479,7 @@ textarea::placeholder {
   }
 
   .exp {
+      border: 2px solid;
       margin: 0;
     width: 100%;
   }
