@@ -318,13 +318,14 @@ textarea::placeholder {
 @media (max-width: 768px) {
   body {
 /*     overflow: hidden; */
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
     padding: 0;
     margin: 0;
   }
   
   .intro, .skills, .education, .experience, .contact{
     height: 100vh;
+    overflow: hidden;
   }
 
   .burger {
