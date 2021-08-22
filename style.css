@@ -352,7 +352,7 @@ textarea::placeholder {
   }
 
   nav li a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .me img {
@@ -381,7 +381,7 @@ textarea::placeholder {
   }
 
   article {
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin: 1rem;
     font-size: 0.5rem;
@@ -496,14 +496,14 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin-bottom: 3rem;
   }
 
   form {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
     height: 100%;
   }
 
@@ -519,12 +519,13 @@ textarea::placeholder {
     margin: 10vh 0;
   }
 
-  /* input {
-    margin-top: 0;
-  } */
+  input {
+    margin: 0;
+  }
 
   textarea {
-    height: 20rem;
+    height: 80%;
+    margin: 0;
   }
 
   input,
