@@ -324,7 +324,7 @@ textarea::placeholder {
     height: 100vh;
   }
   
-  .intro, .skills, .education, .experience, .contact{
+  .intro, .skills, .education, .experience{
       min-height: 100% !important;
       overflow-x: hidden;
   }
@@ -492,7 +492,10 @@ textarea::placeholder {
       flex-direction: column;
   }
 
-  
+  .contact{
+      height: 640px;
+      border: 2px solid;
+  }
 
   .right {
     display: flex;
