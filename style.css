@@ -315,7 +315,8 @@ input::placeholder, textarea::placeholder{
 
     .burger{
         display: block;
-        margin-top: 1rem;
+        margin: 1.5rem 0;
+        padding-left: .5rem;
     }
 
     .burger i{
@@ -328,13 +329,16 @@ input::placeholder, textarea::placeholder{
         z-index: 9;
         margin: 3rem 0;
         height: 100vh;
-        width: 100% !important;
-        font-size: .5rem;
+        width: 100%;
         padding-bottom: 0;
     }
 
     nav{
         width: 100%;
+    }
+
+    nav li a{
+        font-size: 1.8rem;
     }
 
     .me img{
@@ -351,7 +355,7 @@ input::placeholder, textarea::placeholder{
         transform: rotate(270deg);
         background: none;
         box-shadow: none;
-        margin-top: -5rem;
+        margin-top: -3rem;
         margin-left: 55%;
     }
 
@@ -366,13 +370,21 @@ input::placeholder, textarea::placeholder{
         padding: 0;
         margin: 1rem;
         font-size: .5rem;
+        /* background: none; */
+        box-shadow: none;
+        height: 100vh;
     }
 
     .intro{
         padding-bottom: 5rem;
-        height: 50vh;
+        height: 90vh;
+        font-size: 1rem; 
+        text-align: center;
+
+        /* background: none;
+        box-shadow: none; */
         /* border: 2px solid; */
-        margin-top: 20vh;
+        margin-top: 10vh;
     }
 
     .intro .buttons{
@@ -380,79 +392,102 @@ input::placeholder, textarea::placeholder{
     }
 
     .intro .buttons button{
-        width: 4rem;
+        width: 4.5rem;
         height: 1.5rem;
-        font-size: .5rem;
-    }
-
-    .skills{
-        margin-top: 1rem;
-    }
-
-    .intro .socials{
-        /* border: 2px solid; */
-        /* margin-left: 3rem; */
-        
+        font-size: .6rem;
     }
 
     .socials i{
-        font-size: .5rem;
-        padding: .2rem;
+        font-size: 1.2rem;
+        padding: .4rem;
     }
 
     .skills{
-        padding: 1rem 0;
+        margin: 0;
+        /* border: 2px solid; */
+        height: 100vh;
+        
+    }
+
+    article h2{
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
     }
 
     .skills .box{
-        width: 5rem;
-        height: 5rem;
+        width: 15rem;
+        height: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills .boxes{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills .box i{
+        font-size: 3rem;
     }
 
     #sponsors{
-        margin: 1rem 0;
+        width: 100%;
     }
 
     #sponsors .box{
-        width: 6rem;
-        height: 5rem;
-        padding: .2rem;
+        width: 100%;
+        height: 7rem;
+        padding: .5rem;
     }
 
     #sponsors .box img{
-        width: 5rem;
-        height: 4rem;
+        width: 10rem;
+        height: 6rem;
+        object-fit: contain;
     }
 
     .education{
-        margin: 2rem 0;
+        margin: 0;
     }
 
     .education .edu{
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
 
     .exp{
         width: 100%;
     }
 
+    .experience h2{
+        padding-top: .2rem;
+    }
+
+    .experience{
+        height: 100vh;
+    }
+
 .experience .exp-each{
-    width: 7rem;
-    /* height: 5rem; */
-    font-size: .4rem;
+    /* width: 7rem; */
+    font-size: .65rem;
 }
+
+
 
 .cont{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
+    height: 90vh;
     margin: 0;
 }
 
 form{
-    width: 80%;
-    margin-left: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 form button{
@@ -460,15 +495,23 @@ form button{
 }
 
 .contact{
-    margin: 2rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    height: 100vh;
+    margin: 0;
+}
+
+input{
+    margin-top: 0;
+}
+
+textarea{
+    height: 50%;
 }
 
 input, textarea, .right .options i{
-    font-size: .5rem;
+    font-size: .7rem;
 }
 
 .right{
@@ -484,17 +527,32 @@ input, textarea, .right .options i{
 }
 
 @media (width: 768px){
+
+    .intro{
+        font-size: 1.5rem;
+    }
     .experience .exp-each{
-        width: 40%;
-        font-size: .5rem;
+        /* width: 40%; */
+        font-size: 1rem;
     }
 
     .intro .buttons{
-        width: 20%;
+        width: 50%;
+        
+    }
+
+    .intro .buttons button{
+        width: 10rem;
+        height: 3em;
+        font-size: 1.2rem;
     }
 
     .socials{
-        
+        width: 80%;
+    }
+
+    .socials i{
+        font-size: 2rem;
     }
 }
 
@@ -505,32 +563,51 @@ body{
 
     header{
         height: 95vh;
-        font-size: .8rem;
+        font-size: 1rem;
         margin-left: .5rem;
         margin-top: .5rem;
     }
 
     nav a{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .me img{
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     article{
         height: 95vh;
         margin: 0 1rem;
         margin-top: .5rem;
+        text-align: center;
+    }
+
+    article h2{
+        font-size: 2rem;
+    }
+
+    .intro{
+        font-size: .7rem;
     }
 
     .intro .socials{
         bottom: 1rem;
     }
 
+.intro .buttons{
+    width: 70%;
+}
+
+.intro .buttons button{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.2rem;
+}
+
     .socials i{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .skills .box{
@@ -541,7 +618,7 @@ body{
         margin: 0;
     }
 
-    .box i{
+    .skills .box i{
         font-size: 2rem;
     }
 
@@ -554,7 +631,7 @@ body{
     }
 
     .experience .exp-each{
-        width: 16rem;
+        /* width: 16rem; */
         font-size: .8rem;
     } 
 
@@ -566,9 +643,8 @@ body{
         font-size: 1rem;
     }
 
-    .cont{
+    #sponsors .boxes{
         margin: 0;
-        padding-top: 2rem;
     }
     
     #sponsors .box img{
@@ -578,6 +654,58 @@ body{
 
     form{
         margin: 0;
+    }
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    form{
+        width: 95%;
+        margin: 0 1rem;
+        padding: 0;
+        height: 100%;
+    }
+    
+    form button{
+        margin: 0 10rem;
+        width: 50%;
+    }
+    
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    input{
+        margin-top: 0;
+    }
+    
+    textarea{
+        height: 50%;
+    }
+    
+    input, textarea, .right .options i{
+        font-size: 1rem;
+    }
+    
+    .right{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .right .options{
+        padding: .1rem;
+        text-align: center;
     }
 }
 

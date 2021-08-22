@@ -124,7 +124,7 @@ particlesJS('particles-js',
       "hide_card": false,
       "background_color": "#b61924",
       "background_image": "",
-      "background_position": "none",
+      "background_position": "20% 20%",
       "background_repeat": "no-repeat",
       "background_size": "cover"
     }
