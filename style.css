@@ -394,6 +394,7 @@ textarea::placeholder {
 .skills, .education, .experience, .contact{
     height: 100% !important;
     margin-bottom: 100vh !important;
+    margin-top: 0 !important;
 }
 
   .intro {
