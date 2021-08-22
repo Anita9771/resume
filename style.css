@@ -391,13 +391,14 @@ textarea::placeholder {
     overflow: hidden;
   }
 
-.intro, .skills, .education, .experience, .contact{
+.skills, .education, .experience, .contact{
     height: 100% !important;
+    margin-bottom: 100vh !important;
 }
 
   .intro {
     /* padding-bottom: 10rem; */
-    height: 80vh;
+    height: 100%;
     font-size: 1rem;
     text-align: center;
     /* margin-top: 20rem; */
@@ -480,7 +481,7 @@ textarea::placeholder {
   .exp {
     width: 100%;
     margin: 0;
-    font-size: .6rem;
+    font-size: .4rem;
   }
 
   .experience h2{
