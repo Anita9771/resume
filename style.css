@@ -323,9 +323,9 @@ textarea::placeholder {
     margin: 0;
   }
   
-  .intro, .skills, .education, .experience, .contact{
+  .skills, .education, .experience, .contact{
     height: 100vh !important;
-    overflow: hidden;
+/*     overflow: hidden; */
   }
 
   .burger {
