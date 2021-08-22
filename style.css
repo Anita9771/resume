@@ -320,12 +320,11 @@ textarea::placeholder {
     /* overflow-x: hidden; */
     padding: 0;
     margin: 0;
+    overflow: visible;
+    height: 100vh;
   }
   
-  .skills, .education, .experience, .contact{
-    min-height: 100% !important;
-/*     overflow: hidden; */
-  }
+  
 
   .burger {
     position: fixed;
@@ -386,7 +385,7 @@ textarea::placeholder {
     margin: 0;
     padding: 0;
     backdrop-filter: none;
-    height: 100vh;
+    height: 100%;
   }
 
 
@@ -474,7 +473,7 @@ textarea::placeholder {
 
   .exp {
     width: 100%;
-    margin: 0;
+    margin-left: 10%;
     font-size: .6rem;
   }
 
@@ -483,8 +482,7 @@ textarea::placeholder {
 }
 
   .experience {
-    height: 60vh;
-    margin-top: 10vh;
+    margin-top: 100%;
   }
 
   .cont{
@@ -502,6 +500,7 @@ textarea::placeholder {
   .right .options {
     padding: 0.1rem;
     text-align: center;
+    font-size: .6rem;
   }
 }
 
