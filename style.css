@@ -471,18 +471,18 @@ textarea::placeholder {
     font-size: 1.2rem;
   }
 
-  .exp {
-    width: 100%;
-    margin-left: 10%;
-    font-size: .6rem;
+  .experience .exp .exp-each{
+      font-size: .7rem;
+      width: 100%;
   }
 
-  .experience h2{
-    padding-top: .2rem;
-}
+  .exp {
+      margin: 0;
+    width: 100%;
+  }
 
   .experience {
-    margin-top: 100%;
+      max-height: 100%;
   }
 
   .cont{
