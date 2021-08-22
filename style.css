@@ -318,7 +318,7 @@ textarea::placeholder {
 @media (max-width: 768px) {
   body {
     overflow: hidden;
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
     padding: 0;
     margin: 0;
   }
@@ -383,7 +383,7 @@ textarea::placeholder {
     font-size: 0.5rem;
     /* background: none; */
     box-shadow: none;
-    min-height: 100vh;
+    height: 100vh;
   }
 
   .intro {
